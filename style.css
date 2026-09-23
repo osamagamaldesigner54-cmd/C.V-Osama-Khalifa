@@ -1,3 +1,4 @@
+/* إعدادات الصفحة الأساسية والخط والألوان العامة */
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/* الحاوية الرئيسية لكل صفحة */
 .container {
     max-width: 900px;
     margin: 40px auto;
@@ -15,15 +17,18 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
+/* تنسيق الهيدر العام */
 .header {
     text-align: center;
     margin-bottom: 20px;
 }
 
+/* المسافة أسفل هيدر الصفحة الرئيسية */
 .home-header {
     margin-bottom: 28px;
 }
 
+/* ترتيب صورة البروفايل والاسم واللوجو في الصفحة الرئيسية */
 .home-identity {
     display: grid;
     grid-template-columns: 180px minmax(0, 1fr) 180px;
@@ -32,10 +37,12 @@ body {
     text-align: center;
 }
 
+/* منع محتوى الاسم من تجاوز العمود الخاص به */
 .home-copy {
     min-width: 0;
 }
 
+/* تنسيق هيدر الصفحات الداخلية وزر Home */
 .inner-header {
     display: flex;
     align-items: center;
@@ -45,6 +52,7 @@ body {
     border-bottom: 2px solid #9bcaca;
 }
 
+/* حجم وتوسيط محتوى الصفحة الرئيسية */
 .home-page {
     max-width: 760px;
     min-height: 560px;
@@ -53,12 +61,14 @@ body {
     justify-content: center;
 }
 
+/* تنسيق الاسم الرئيسي */
 h1 {
     font-size: 36px;
     color: #005c5c;
     margin: 0;
 }
 
+/* تنسيق المسمى الوظيفي */
 .job-title {
     font-size: 24px;
     color: #f2c94c;
@@ -66,27 +76,32 @@ h1 {
     text-align: center;
 }
 
+/* تنسيق عناوين الأقسام */
 h2 {
     font-size: 24px;
     color: #005c5c;
     margin: 0 0 12px;
 }
 
+/* المسافات والحد السفلي للأقسام */
 section {
     padding: 20px 0;
     border-bottom: 2px solid #9bcaca;
 }
 
+/* إزالة الحد من آخر قسم */
 section:last-child {
     border-bottom: none;
 }
 
+/* تنسيق النصوص العامة */
 p {
     font-size: 18px;
     line-height: 1.8;
     margin: 0;
 }
 
+/* لون نصوص محتوى السيرة الذاتية */
 .p-about,
 .p-objective,
 .p-education,
@@ -94,22 +109,26 @@ p {
     color: #333;
 }
 
+/* تنسيق روابط البريد الإلكتروني */
 .gmail {
     color: #005c5c;
     text-decoration: none;
     font-weight: 700;
 }
 
+/* إضافة خط أسفل البريد عند المرور عليه */
 .gmail:hover {
     text-decoration: underline;
 }
 
+/* ترتيب بيانات التواصل رأسيًا */
 .p-CONTACT {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
+/* ترتيب كل سطر من بيانات التواصل */
 .contact-row {
     display: flex;
     align-items: center;
@@ -117,6 +136,7 @@ p {
     flex-wrap: wrap;
 }
 
+/* ضبط محاذاة عناصر التواصل */
 .contact-item {
     display: inline-flex;
     align-items: center;
@@ -125,11 +145,13 @@ p {
     vertical-align: middle;
 }
 
+/* محاذاة روابط وعناصر التواصل */
 .p-CONTACT a,
 .p-CONTACT span {
     display: inline-flex;
     align-items: center;
 }
+/* شريط التنقل القديم إن وُجد في أي صفحة */
 .nav {
     position: sticky;
     top: 16px;
@@ -147,6 +169,7 @@ p {
     backdrop-filter: blur(10px);
 }
 
+/* تنسيق روابط شريط التنقل القديم */
 .nav a {
     color: #566bca;
     text-decoration: none;
@@ -157,21 +180,25 @@ p {
     transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
 
+/* تأثير المرور على روابط شريط التنقل */
 .nav a:hover {
     color: #fff;
     background: #005c5c;
     transform: translateY(-2px);
 }
 
+/* إطار واضح عند استخدام لوحة المفاتيح */
 .nav a:focus-visible {
     outline: 3px solid rgba(0, 92, 92, 0.35);
     outline-offset: 2px;
 }
 
+/* ترك مسافة عند الانتقال إلى قسم داخلي */
 section {
     scroll-margin-top: 105px;
 }
 
+/* شريط روابط التواصل الاجتماعي */
 .social-links {
     display: flex;
     align-items: center;
@@ -184,6 +211,7 @@ section {
     width: fit-content;
 }
 
+/* تنسيق أيقونة كل موقع تواصل */
 .social-link {
     color: #ffffff;
     text-decoration: none;
@@ -198,17 +226,20 @@ section {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+/* تأثير المرور على أيقونة التواصل */
 .social-link:hover {
     background: rgba(255, 255, 255, 0.16);
     transform: translateY(-2px);
 }
 
+/* ترتيب أيقونات البرامج */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
 
+/* شكل بطاقة كل برنامج وأيقونته */
 .skills-list span,
 .skills-list a {
     position: relative;
@@ -225,6 +256,7 @@ section {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+/* اسم البرنامج الذي يظهر أسفل الأيقونة */
 .skills-list .skill-icon::after {
     content: attr(title);
     position: absolute;
@@ -245,16 +277,19 @@ section {
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
+/* إظهار اسم البرنامج عند المرور أو التركيز */
 .skills-list .skill-icon:hover::after,
 .skills-list .skill-icon:focus-visible::after {
     opacity: 1;
     transform: translate(-50%, 0);
 }
 
+/* إزالة الخط أسفل أيقونات البرامج القابلة للنقر */
 .skills-list a {
     text-decoration: none;
 }
 
+/* تأثير المرور والتركيز على بطاقات البرامج */
 .skills-list span:hover,
 .skills-list span:focus-visible,
 .skills-list a:hover,
@@ -263,11 +298,13 @@ section {
     transform: translateY(-3px);
 }
 
+/* إطار التركيز على بطاقات البرامج */
 .skills-list span:focus-visible {
     outline: 3px solid rgba(0, 92, 92, 0.35);
     outline-offset: 2px;
 }
 
+/* حجم صور شعارات البرامج */
 .skill-logo {
     width: 34px;
     height: 34px;
@@ -275,6 +312,7 @@ section {
     filter: hue-rotate(-15deg) saturate(1.15);
 }
 
+/* صورة البروفايل الدائرية */
 .profile-image {
     display: block;
     width: 180px;
@@ -285,6 +323,7 @@ section {
     border: 4px solid #005c5c;
 }
 
+/* حجم ومظهر لوجو الموقع */
 .site-logo {
     display: block;
     width: 180px;
@@ -293,6 +332,7 @@ section {
     margin: 0 auto;
 }
 
+/* زر Home في الصفحات الداخلية */
 .home-button {
     display: inline-flex;
     align-items: center;
@@ -307,7 +347,9 @@ section {
     transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* تأثير المرور والتركيز على زر Home */
 .home-button:hover,
+/* إطار التركيز على زر Home */
 .home-button:focus-visible {
     background: #004444;
     box-shadow: 0 8px 16px rgba(0, 92, 92, 0.2);
@@ -319,6 +361,7 @@ section {
     outline-offset: 2px;
 }
 
+/* شبكة أزرار الصفحات الرئيسية */
 .page-links {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -327,6 +370,7 @@ section {
     margin: 0 0 0 auto;
 }
 
+/* شكل زر كل صفحة */
 .page-links a {
     display: flex;
     align-items: center;
@@ -344,6 +388,7 @@ section {
     transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* ألوان وحركة أزرار الصفحات عند التفاعل */
 .page-links a:hover,
 .page-links a:focus-visible,
 .page-links .home-link {
@@ -353,33 +398,40 @@ section {
     transform: translateY(-2px);
 }
 
+/* إطار التركيز على أزرار الصفحات */
 .page-links a:focus-visible {
     outline: 3px solid rgba(0, 92, 92, 0.35);
     outline-offset: 2px;
 }
 
+/* تنسيق قسم صفحات المحتوى */
 .inner-page section {
     border-top: 2px solid #9bcaca;
     border-bottom: none;
     padding-top: 28px;
 }
 
+/* مسافة بين فقرات صفحات المحتوى */
 .inner-page section p + p {
     margin-top: 12px;
 }
 
+/* تنسيقات الشاشات الصغيرة */
 @media (max-width: 600px) {
+    /* تقليل الهوامش على الموبايل */
     .container {
         margin: 16px 10px;
         padding: 20px 18px;
     }
 
+    /* ضبط شريط التنقل للموبايل */
     .nav {
         top: 8px;
         gap: 6px;
         padding: 8px;
     }
 
+    /* ضبط روابط شريط التنقل للموبايل */
     .nav a {
         flex: 1 1 42%;
         padding: 8px 6px;
@@ -387,41 +439,49 @@ section {
         font-size: 13px;
     }
 
+    /* إلغاء الارتفاع الإجباري للصفحة الرئيسية */
     .home-page {
         min-height: auto;
     }
 
+    /* ترتيب عناصر الهيدر رأسيًا على الموبايل */
     .home-identity {
         grid-template-columns: 1fr;
         gap: 16px;
     }
 
+    /* تصغير صورة البروفايل */
     .home-identity .profile-image {
         width: 150px;
         height: 150px;
     }
 
+    /* تصغير اللوجو */
     .home-identity .site-logo {
         width: min(220px, 70vw);
         max-height: 130px;
     }
 
+    /* ترتيب هيدر الصفحات الداخلية رأسيًا */
     .inner-header {
         align-items: flex-start;
         flex-direction: column;
         gap: 12px;
     }
 
+    /* تصغير عنوان الهيدر الداخلي */
     .inner-header h1 {
         font-size: 26px;
     }
 
+    /* جعل أزرار الصفحات في عمودين */
     .page-links {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 8px;
         margin: 0;
     }
 
+    /* تصغير أزرار الصفحات */
     .page-links a {
         min-height: 42px;
         padding: 7px 6px;
@@ -429,17 +489,21 @@ section {
     }
 }
 
+/* تنسيقات الشاشات المتوسطة */
 @media (min-width: 601px) and (max-width: 900px) {
+    /* تصغير نص الأزرار لمنع التزاحم */
     .page-links a {
         font-size: 12px;
         padding-inline: 3px;
     }
 }
+/* تنسيق السنوات في صفحة Work History */
 .year {
     font-weight: 700;
     color: #005c5c;
 
 }
+/* تنسيق المسميات الوظيفية في صفحة Work History */
 .position {
     font-weight: 700;
     color: #000000;
